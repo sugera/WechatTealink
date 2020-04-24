@@ -33,6 +33,8 @@ run.air文件夹中的run.py: 调用WechatTealink中封装好的函数，直接�
 2、添加好如图收货地址
 ![image](https://github.com/sugera/WechatTealink/tree/master/readme/7.png)
 
+3、先打开一下要测试的小程序，确保小程序在最近使用的小程序窗口中
+
 3、测试地点在长虹科技大厦或附近 （涉及切换位置和门店流程）
 
 修改好以上参数就可以在run中调用要使用的模块拼装成你想要的测试脚本啦
