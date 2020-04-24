@@ -17,21 +17,21 @@ run.air文件夹中的run.py: 调用WechatTealink中封装好的函数，直接�
 
 #修改参数
 1、WechatTealink、run 中的项目路径，需改成你本地的项目路径
-![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/1.jpg)
-![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/2.png)
-![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/6.png)
+![image](https://github.com/sugera/WechatTealink/master/tree/readme/1.jpg)
+![image](https://github.com/sugera/WechatTealink/tree/master/readme/2.png)
+![image](https://github.com/sugera/WechatTealink/tree/master/readme/6.png)
 
 2、WechatTealink中 修改你要测试的小程序页面元素
-![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/3.png)
-![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/4.png)
-![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/5.png)
+![image](https://github.com/sugera/WechatTealink/tree/master/readme/3.png)
+![image](https://github.com/sugera/WechatTealink/tree/master/readme/4.png)
+![image](https://github.com/sugera/WechatTealink/tree/master/readme/5.png)
 
 #项目准备，部分函数中的元素是写死的，所以需要事先在小程序中创造好条件。
 
 1、后台发放所有商品通用的10元代金券，并进入小程序领取好该卡券，越多越好
 
 2、添加好如图收货地址
-![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/7.png)
+![image](https://github.com/sugera/WechatTealink/tree/master/readme/7.png)
 
 3、测试地点在长虹科技大厦或附近 （涉及切换位置和门店流程）
 
@@ -68,7 +68,7 @@ run.air文件夹中的run.py: 调用WechatTealink中封装好的函数，直接�
 
 #查看报告
 运行完脚本后，框架自动生成一个很漂亮直观的测试报告，点击图中地方即可查看。
-![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/8.png)
+![image](https://github.com/sugera/WechatTealink/tree/master/readme/8.png)
 
 注意，该报告只显示最新一次运行的结果，没有历史报告。如需要获取历史报告，每次运行脚本后，在IDE窗口右键点击文件名称，可导出报告，因为报告中包含了静态资源，所以文件有点大。
 
