@@ -1,4 +1,4 @@
-
+#封装脚本
 # -*- encoding=utf8 -*-
 __author__ = "Administrator"
 
@@ -16,8 +16,14 @@ from image import *
 
 auto_setup(__file__)
 
+#打开微信
+start_app("com.tencent.mm")
+
 #下拉微信主页，显示最近使用的小程序
-# poco("com.tencent.mm:id/b6u").swipe([0.0896, 0.7762])
+poco("com.tencent.mm:id/b6u").swipe([0.0896, 0.7762])
+
+#打开有单微信小程序
+click(tealink)
 
 #点击函数
 def click(img):
@@ -25,22 +31,27 @@ def click(img):
     touch(img)
     return print("click" + str(img))
 
-#打开有单微信小程序
-# click(tealink)
-
 #查看是否在首页，不是则点击首页
 def main():
     if exists(index_img):
         touch(index_img)
     return print("进入首页")
 
-#授权（如果未授权过，需引用）
-def getAuth():
-    if exists(auth_toast):
-        click(auth_agree)
-        click(allow_get_user)
-    click(allow_get_user)
-    return print("授权成功")
+#购物车增加商品数量,+5个
+def addGood(): 
+    for i in range(10):
+        while i <5:
+            click(addBtn)
+            break
+    return
+            
+ #购物车减少商品数量，-4个
+def subGood():
+    for i in range(10):
+        while i <4:
+            click(lessBtn)
+            break  
+    return
 
 #点击确定按钮
 #因为有不同样式的确定按钮，不清楚哪些场景下出现哪些按钮，所以遍历，出现的是哪个就点哪个
@@ -49,6 +60,14 @@ def confirm():
         if exists(i):
             click(i)
     return
+
+#授权（如果未授权过，需引用）
+def getAuth():
+    if exists(auth_toast):
+        click(auth_agree)
+        click(allow_get_user)
+    click(allow_get_user)
+    return print("授权成功")
 
 #判断门店营业、配送状态 ，进入门店主页再调用
 #因为框架无法识别小程序页面元素的层级，只能判断单一门店的状态，所以不在门店列表使用
@@ -66,19 +85,6 @@ def changeLocation():
     click(setLocation)
     click(JiaLian)
     return print("成功切换位置")
-
-#购物车增加商品数量,+5个
-def addGood(): 
-    for i in range(10):
-        while i <5:
-            click(addBtn)
-            break
-#购物车减少商品数量，-4个
-def sub():
-    for i in range(10):
-        while i <4:
-            click(lessBtn)
-            break
 
 #切换门店
 def chanShop():
@@ -102,8 +108,7 @@ def change():
         click(noBring)
         print("当前为外卖模式，切换为堂食模式")
     return
-  
-# change()    
+   
     
 #主流程外卖点单
 #不含切换地址、切换门店操作
@@ -154,10 +159,4 @@ def buyBring():
     confirm()
     return print("堂食模式下单")
 
-
-
-# main()      
-# buyTakeOut()
-# buyBring()
-# isBusiness()
 

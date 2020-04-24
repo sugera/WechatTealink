@@ -1,3 +1,4 @@
+#调用WechatTeaklink中的函数就行
 # -*- encoding=utf8 -*-
 __author__ = "Administrator"
 
@@ -11,4 +12,5 @@ ST.PROJECT_ROOT = "F:/project/AirTest"
 using("WechatTealink.air")
 from WechatTealink import *
 
-change()
+#例：调用切换门店   输入：change()   
+
