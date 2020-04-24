@@ -17,7 +17,7 @@ run.air文件夹中的run.py: 调用WechatTealink中封装好的函数，直接�
 
 #修改参数
 1、WechatTealink、run 中的项目路径，需改成你本地的项目路径
-![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/1.jpg)
+![](https://github.com/sugera/WechatTealink/tree/master/readme.img/1.jpg)
 ![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/2.png)
 ![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/6.png)
 
