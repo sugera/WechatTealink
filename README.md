@@ -18,6 +18,7 @@ run.air文件夹中的run.py: 调用WechatTealink中封装好的函数，直接�
 #修改参数
 1、WechatTealink、run 中的项目路径，需改成你本地的项目路径
 图片1、2、6
+![image](https://github.com/sugera/WechatTealink/tree/master/readme.img/1.png)
 
 2、WechatTealink中 修改你要测试的小程序页面元素
 图片3、4、5
