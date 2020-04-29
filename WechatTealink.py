@@ -17,13 +17,29 @@ from image import *
 auto_setup(__file__)
 
 #打开微信
-start_app("com.tencent.mm")
+def start():
+    start_app("com.tencent.mm")
+    return print("打开微信")
 
 #下拉微信主页，显示最近使用的小程序
-poco("com.tencent.mm:id/b6u").swipe([0.0896, 0.7762])
+def recentOpen():
+    poco("com.tencent.mm:id/b6u").swipe([0.0896, 0.7762])
+    return print("打开最近使用的小程序")
 
+    
 #打开有单微信小程序
-click(tealink)
+def Open():
+    click(tealink)
+    return print("打开待测小程序")
+
+    
+#新会员成为会员    
+def newMember():
+    if exists(notMember):
+        click(auth_member)
+        click(allow_get_user)      
+    return print("授权成为会员")
+
 
 #点击函数
 def click(img):

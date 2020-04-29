@@ -55,6 +55,9 @@ notDistri = Template(r"tpl1587627455118.png", record_pos=(0.272, 0.915), resolut
  
 shopRelax = Template(r"tpl1587627699058.png", record_pos=(-0.146, 0.908), resolution=(1080, 2340))
 
+notMember = Template(r"tpl1588126951464.png", record_pos=(-0.003, -0.365), resolution=(1080, 2340))
+auth_member = Template(r"tpl1588126984133.png", record_pos=(0.007, 0.241), resolution=(1080, 2340)) 
+
 
 
 

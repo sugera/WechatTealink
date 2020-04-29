@@ -14,3 +14,4 @@ from WechatTealink import *
 
 #例：调用切换门店   输入：change()   
 
+newMember()
